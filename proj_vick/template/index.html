@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>port-folio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+  </head>
+  <body style="font-family: Dancing Script">
+    <div class="w-full h-screen bg-zinc-100 font-['Dancing Script']">
+      <div class="container mx-auto">
+        <div class="navbar w-full py-4 px-3 flex justify-between">
+          <h1>nabs-vick.design</h1>
+          <div class="hidden links lg:flex gap-10 opacity-50 sm:hidden">
+            <a class="font-xs" href="{% url 'about'%}" >about</a>
+            <a class="font-xs" href="{% url 'front'%}">contact</a>
+          </div>
+          <i class="ri-menu-line lg:hidden"></i>
+        </div>
+        <div
+          class="main absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col justify-center items-center"
+        >
+          <div class="img w-32 h-32 relative rounded-full">
+            <img
+              class="absolute object-cover w-24 h-24 rounded-full"
+              src="https://i.pinimg.com/236x/63/13/52/631352e1310e51f8142b914855debd4e.jpg"
+              alt=""
+            />
+          </div>
+          <h1 class="text-center text-2xl lg:text-xl">Hi I am victor kemboi</h1>
+          <p
+            class="text-black w-5/4 font-bold text-5xl lg:text-4xl text-center"
+          >
+            I am a web developer based in Kenya. I love to build beautiful
+            websites.I, m a designer & developer with a passion 
+            for web design. I enjoy developing simple, clean
+             and slick websites that provide real value to the 
+             end user. Thousands of clients have procured 
+             exceptional results while working with me. Delivering work
+             within time and budget which meets clients requirements in our 
+             mata.
+            </p>
+          <button
+            class="rounded-full backdrop-blur-xl shadow-xl hover:scale-125 px-4 py-2 lg:px-3 lg:py-1 bg-black text-sm font-semibold text-white flex justify-center mt-10 lg:mt-7"
+          >
+           <a href="{% url 'reach'%}"> Connect With Me</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[50%] bg-zinc-200">
+      <div class="container mx-auto px-5 pt-5 lg:px-3 lg:py-3 flex flex-col lg:flex-nowrap sm:grid-rows-3 sm:gap-2 lg:grid-rows-4 gap-4 sm:flex-row sm:gap-4 lg:flex-grid ">
+          
+    
+        <div class="w-full lg:w-1/2 xl:w-3/2   border-2 border-gray-400 p-4 rounded-md pt-5">   
+            <div class="card container w-full lg:w-[full]">
+               <div class="w-full rounded-md  bg-red-200 p-3">
+                 <div class="flex justify-between">
+                            <h2>web designing services</h2>
+                            <i class="ri-bookmark-line"></i>
+                 </div>
+                  <div class="flex justify-between w-full h-3/2 pt-10">
+                        <h1 class="w-3/5 text-3xl">front-end development</h1>
+                        <i class="ri-arrow-right-line font-bold text-xl rounded-full"></i>
+                  </div>
+               </div>
+               <div class="w-full flex justify-between bg-white rounded-md p-3">
+    <div  class="flex gap-1"> 
+        <i class="ri-arrow-up-circle-fill"></i>
+        <h2>front-end web</h2>
+    </div>
+    <div>
+        <button class="px-3 py-2  lg:px-7 lg:py-3 bg-black text-white font-semibold rounded-full ">View</button>
+    </div>
+                    </div>
+        </div>
+
+    </div>
+    <div class="w-full lg:w-1/2 xl:w-3/2 border-2 border-gray-400 p-4 rounded-md pt-5">   
+        <div class="card container w-full lg:w-[full]">
+           <div class="w-full rounded-md  bg-sky-200 p-3">
+             <div class="flex justify-between">
+                        <h2>web interactivity</h2>
+                        <i class="ri-bookmark-line"></i>
+             </div>
+              <div class="flex justify-between w-full h-3/2 pt-10">
+                    <h1 class="w-3/5 text-3xl">javascript specialist</h1>
+                    <i class="ri-arrow-right-line font-bold text-xl rounded-full"></i>
+              </div>
+           </div>
+           <div class="w-full flex justify-between bg-white rounded-md p-3">
+<div  class="flex gap-1"> 
+    <i class="ri-arrow-up-circle-fill"></i>
+    <h2>javascript specialist</h2>
+</div>
+<div>
+    <button class="px-3 py-2  lg:px-7 lg:py-3 bg-black text-white font-semibold rounded-full "><a href="./front.html">View</a></button>
+</div>
+                </div>
+    </div>
+
+</div>
+<div class="w-full lg:w-1/2 xl:w-3/2 border-2 border-gray-400 p-4 rounded-md pt-5">   
+    <div class="card container w-full lg:w-full">
+       <div class="w-full rounded-md  bg-red-200 p-3">
+         <div class="flex justify-between">
+                    <h2>machine language</h2>
+                    <i class="ri-bookmark-line"></i>
+         </div>
+          <div class="flex justify-between w-full h-3/2 pt-10">
+                <h1 class="w-3/5 text-3xl">machine language specialist</h1>
+                <i class="ri-arrow-right-line font-bold text-xl rounded-full"></i>
+          </div>
+       </div>
+       <div class="w-full flex justify-between bg-white rounded-md p-3">
+<div  class="flex gap-1"> 
+<i class="ri-arrow-up-circle-fill"></i>
+<h2>telecommunication engineer</h2>
+</div>
+<div>
+<button class="px-3 py-2  lg:px-7 lg:py-3 bg-black text-white font-semibold rounded-full ">View</button>
+</div>
+            </div>
+</div>
+
+</div>
+
+
+
+    
+
+    
+    </div>
+
+    
+    </div>
+  </body>
+</html>
